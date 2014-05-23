@@ -2,6 +2,8 @@
 
 Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
 
+This is a fork of [Roots](https://github.com/roots/bedrock), modified to use with deploying sites via [Laravel Forge](https://forge.laravel.com).
+
 ## Quick Start
 
 Run `composer create-project roots/bedrock <path>` (see [Installation/Usage](#installationusage) for more details)
@@ -9,7 +11,6 @@ Run `composer create-project roots/bedrock <path>` (see [Installation/Usage](#in
 ## Features
 
 * Dependency management with [Composer](http://getcomposer.org)
-* Automated deployments with [Capistrano](http://www.capistranorb.com/)
 * Better folder structure
 * Easy WordPress configuration with environment specific files
 * Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
@@ -208,7 +209,7 @@ Whenever you add a new plugin or update the WP version, run `composer update` to
 
 `!web/app/plugins/plugin-name`
 
-Note: Some plugins may create files or folders outside of their given scope, or even make modifications to `wp-config.php` and other files in the `app` directory. These files should be added to your `.gitignore` file as they are managed by the plugins themselves, which are managed via Composer. Any modifications to `wp-config.php` that are needed should be moved into `config/application.php`. 
+Note: Some plugins may create files or folders outside of their given scope, or even make modifications to `wp-config.php` and other files in the `app` directory. These files should be added to your `.gitignore` file as they are managed by the plugins themselves, which are managed via Composer. Any modifications to `wp-config.php` that are needed should be moved into `config/application.php`.
 
 #### Updating WP and plugin versions
 
