@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "anchour/bedrock",
   "type": "project",
   "license": "MIT",
   "description": "A modern WordPress stack",
-  "homepage": "http://roots.io/wordpress-stack/",
+  "homepage": "http://anchour.com",
   "authors": [
     {
       "name": "Scott Walkinshaw",
@@ -14,14 +14,18 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Matt Robitaille",
+      "email": "matt@anchour.com",
+      "homepage": "https://github.com/mrobit"
     }
   ],
   "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
+    "wordpress", "stack", "composer", "vagrant", "wp"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "http://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/anchour/bedrock/issues"
   },
   "config": {
     "preferred-install": "dist",
