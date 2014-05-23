@@ -17,8 +17,6 @@ if (is_array($env_vars) && count($env_vars) > 0) {
   }
 }
 
-var_dump($_ENV);
-
 /**
  * Set up our global environment constant and load its config first
  * Default: development
