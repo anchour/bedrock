@@ -2,26 +2,13 @@
 $root_dir = dirname(__DIR__);
 $webroot_dir = $root_dir . '/web';
 
-$files = scandir($root_dir);
-
-// Get the available config file. I don't like this implementation.
-foreach ($files as $key => $file) {
-  if ( substr($file, 0, 4) === '.env' && substr($file, ( strlen($file) - 4 ), 4) === '.php' ) {
-    $files[$key] = $file;
-  } else {
-    unset($files[$key]);
-  }
-}
-
 // Get the environment file.
-$env_file = array_shift($files);
+$env_file = "{$root_dir}/.env.php";
 
-if ( ! $env_file ) {
+if ( ! file_exists($env_file) ) {
   throw new Exception('No environment file found.');
 }
-
-$env_config = $root_dir . '/' . $env_file;
-$env_vars = require $env_config;
+$env_vars = require $env_file;
 
 // Get the .env configuration file.
 if (is_array($env_vars) && count($env_vars) > 0) {
@@ -29,6 +16,8 @@ if (is_array($env_vars) && count($env_vars) > 0) {
     $_ENV[$key] = $var;
   }
 }
+
+var_dump($_ENV);
 
 /**
  * Set up our global environment constant and load its config first
