@@ -2,26 +2,39 @@
 $root_dir = dirname(__DIR__);
 $webroot_dir = $root_dir . '/web';
 
-/**
- * Use Dotenv to set required environment variables and load .env file in root
- */
-if (file_exists($root_dir . '/.env')) {
-  Dotenv::load($root_dir);
+$files = scandir($root_dir);
+
+// Get the available config file. I don't like this implementation.
+foreach ($files as $key => $file) {
+  if ( substr($file, 0, 4) === '.env' && substr($file, ( strlen($file) - 4 ), 4) === '.php' ) {
+    $files[$key] = $file;
+  } else {
+    unset($files[$key]);
+  }
 }
 
-Dotenv::required(array('DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL'));
+// Get the environment file.
+$env_file = array_shift($files);
+
+if ( ! $env_file ) {
+  throw new Exception('No environment file found.');
+}
+
+$env_config = $root_dir . '/' . $env_file;
+$env_vars = require $env_config;
+
+// Get the .env configuration file.
+if (is_array($env_vars) && count($env_vars) > 0) {
+  foreach($env_vars as $key => $var) {
+    $_ENV[$key] = $var;
+  }
+}
 
 /**
  * Set up our global environment constant and load its config first
  * Default: development
  */
-define('WP_ENV', getenv('WP_ENV') ? getenv('WP_ENV') : 'development');
-
-$env_config = dirname(__FILE__) . '/environments/' . WP_ENV . '.php';
-
-if (file_exists($env_config)) {
-  require_once $env_config;
-}
+define('WP_ENV', $_ENV['WP_ENV'] ? $_ENV['WP_ENV'] : 'development');
 
 /**
  * Custom Content Directory
