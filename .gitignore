@@ -9,7 +9,6 @@ sql-dump-*.sql
 # Dotenv
 .env
 .env.*
-!.env.example
 
 # Application
 web/app/plugins/*
@@ -31,3 +30,6 @@ node_modules
 # Vagrant
 bin
 .vagrant
+
+# Other
+.DS_Store
