@@ -21,7 +21,18 @@ if (is_array($env_vars) && count($env_vars) > 0) {
  * Set up our global environment constant and load its config first
  * Default: development
  */
-define('WP_ENV', $_ENV['WP_ENV'] ? $_ENV['WP_ENV'] : 'development');
+$_ENV['WP_ENV'] = isset($_ENV['WP_ENV'])
+  ? $_ENV['WP_ENV']
+  : 'development';
+define('WP_ENV', $_ENV['WP_ENV'] );
+
+// Get the proper config file...
+$env_config = dirname(__FILE__) . '/environments/' . WP_ENV . '.php';
+
+// ... and include it, so we get the proper $_ENV variables.
+if ( file_exists($env_config) ) {
+  require_once $env_config;
+}
 
 /**
  * Custom Content Directory
