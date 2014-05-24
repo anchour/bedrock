@@ -2,7 +2,10 @@
 $root_dir = dirname(__DIR__);
 $webroot_dir = $root_dir . '/web';
 
-// Get the environment file.
+// Get the .env file set up by the Bedrock Installer.
+Dotenv::load($root_dir);
+
+// Get the environment file set up by Forge.
 $env_file = "{$root_dir}/.env.php";
 
 if ( ! file_exists($env_file) ) {
@@ -10,10 +13,14 @@ if ( ! file_exists($env_file) ) {
 }
 $env_vars = require $env_file;
 
-// Get the .env configuration file.
+// Get the .env configuration file. Only set the $_ENV var from .env.php
+// if the environment variable isn't already set. This allows .env
+// to manage both DB_HOST, USER, etc. variables, so local
+// dev. environments do not need to use .env.php
 if (is_array($env_vars) && count($env_vars) > 0) {
   foreach($env_vars as $key => $var) {
-    $_ENV[$key] = $var;
+    if ( ! isset($_ENV[$key]) )
+      $_ENV[$key] = $var;
   }
 }
 
