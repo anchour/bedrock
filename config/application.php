@@ -2,21 +2,37 @@
 $root_dir = dirname(__DIR__);
 $webroot_dir = $root_dir . '/web';
 
-// Get the .env file set up by the Bedrock Installer.
+// Get the .env file set up by the Bedrock Installer. Dotenv::load automatically searches for
+// the .env file, so no need to set up the .env path.
 Dotenv::load($root_dir);
 
 // Get the environment file set up by Forge.
-$env_file = "{$root_dir}/.env.php";
+$env_file = "{$root_dir}/.env";
+$env_php_file = "{$root_dir}/.env.php";
 
 if ( ! file_exists($env_file) ) {
   throw new Exception('No environment file found.');
 }
-$env_vars = require $env_file;
 
-// Get the .env configuration file. Only set the $_ENV var from .env.php
-// if the environment variable isn't already set. This allows .env
-// to manage both DB_HOST, USER, etc. variables, so local
-// dev. environments do not need to use .env.php
+$env_vars = [];
+
+/**
+ * If the .env.php file exists, include that file so we get the .env.php database array.
+ * Note that these values will be overridden by any values set within .env,
+ * so really only salts should be set within .env for any sites
+ * That are deployed via Forge.
+ */
+if ( file_exists($env_php_file) )
+{
+  $env_vars = require $env_php_file;
+}
+
+/**
+ * Get the .env configuration file. Only set the $_ENV var from .env.php
+ * if the environment variable isn't already set. This allows .env
+ * to manage both DB_HOST, USER, etc. variables, so local
+ * dev. environments do not need to use .env.php
+ */
 if (is_array($env_vars) && count($env_vars) > 0) {
   foreach($env_vars as $key => $var) {
     if ( ! isset($_ENV[$key]) )
