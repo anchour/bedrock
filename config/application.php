@@ -36,7 +36,9 @@ if ( file_exists($env_php_file) )
 if (is_array($env_vars) && count($env_vars) > 0) {
   foreach($env_vars as $key => $var) {
     if ( ! isset($_ENV[$key]) )
+      putenv("{$key}={$var}");
       $_ENV[$key] = $var;
+      $_SERVER[$key] = $var;
   }
 }
 
