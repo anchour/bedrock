@@ -23,7 +23,7 @@ class Installer {
   public static $DBKEYS = array(
     'DB_NAME',
     'DB_HOST',
-    'DB_USERNAME',
+    'DB_USER',
     'DB_PASSWORD',
   );
 
