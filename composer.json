@@ -46,11 +46,11 @@
       "type": "package",
       "package": {
         "name": "wordpress/wordpress",
-        "version": "3.9.1",
+        "version": "3.9.2",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://wordpress.org/wordpress-3.9.1.zip"
+          "url": "https://wordpress.org/wordpress-3.9.2.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
@@ -60,7 +60,7 @@
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress/wordpress": "3.9.1",
+    "wordpress/wordpress": "3.9.2",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
@@ -79,11 +79,11 @@
   },
   "extra": {
     "installer-paths": {
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "webroot-dir": "web/wp",
+    "webroot-dir": "public/wp",
     "webroot-package": "wordpress/wordpress"
   }
 }

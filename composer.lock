@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d3607eb2e28ecc2ee0f7624f335c424",
+    "hash": "f58078a48227d02e2bc071c0ab4b3cc7",
     "packages": [
         {
             "name": "composer/installers",
@@ -181,10 +181,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-3.9.1.zip",
+                "url": "https://wordpress.org/wordpress-3.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -425,15 +425,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.4.2",
+            "version": "1.5.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.4.2"
+                "reference": "tags/1.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.4.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -448,15 +448,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4",
+            "version": "1.4.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4"
+                "reference": "tags/1.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-super-cache.1.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-super-cache.1.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
