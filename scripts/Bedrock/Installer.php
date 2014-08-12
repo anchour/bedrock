@@ -64,6 +64,8 @@ class Installer {
     static::$envFilePath = static::$root . '/.env';
     static::$envPhpFilePath = static::$root . '/.env.php';
 
+    $generate_salts = $generate_env_php = false;
+
     $composer = $event->getComposer();
     $io = $event->getIO();
 
