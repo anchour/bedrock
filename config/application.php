@@ -1,6 +1,6 @@
 <?php
 $root_dir = dirname(__DIR__);
-$webroot_dir = $root_dir . '/web';
+$webroot_dir = $root_dir . '/public';
 
 // Get the .env file set up by the Bedrock Installer. Dotenv::load automatically searches for
 // the .env file, so no need to set up the .env path.
