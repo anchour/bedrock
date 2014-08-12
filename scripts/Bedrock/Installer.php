@@ -20,11 +20,14 @@ class Installer {
    * Holds the keys that are used in .env.php.
    * @var array
    */
-  public static $DBKEYS = array(
+  public static $ENV_KEYS = array(
     'DB_NAME',
     'DB_HOST',
     'DB_USER',
     'DB_PASSWORD',
+    'WP_ENV',
+    'WP_HOME',
+    'WP_SITEURL',
   );
 
   /**
@@ -127,7 +130,7 @@ class Installer {
 
     $keys = array_map(function($key) {
       return sprintf("'%s' => '%s'", $key, '');
-    }, self::$DBKEYS);
+    }, self::$ENV_KEYS);
 
     if (strlen(file_get_contents(static::$envPhpFilePath)) === 0 && $handle) {
       fwrite($handle, "<?php return array(\n  " . implode($keys, ",\n  ") . "\n);");
