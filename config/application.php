@@ -55,7 +55,7 @@ define('WP_ENV', $_ENV['WP_ENV'] );
 // Get the proper config file...
 $env_config = dirname(__FILE__) . '/environments/' . WP_ENV . '.php';
 
-// ... and include it, so we get the proper $_ENV variables.
+// ... and include it, so we set the proper definitions, etc.
 if ( file_exists($env_config) ) {
   require_once $env_config;
 }
