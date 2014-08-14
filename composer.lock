@@ -425,15 +425,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.5",
+            "version": "1.5.5.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.5"
+                "reference": "tags/1.5.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
