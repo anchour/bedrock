@@ -75,6 +75,7 @@
     "wpackagist-plugin/cms-tree-page-view": "1.2.x",
     "wpackagist-plugin/disqus-comment-system": "2.x",
     "wpackagist-plugin/bruteprotect": "~2.1",
+    "wpackagist-plugin/jetpack": "~3.1.1",
     "wpackagist-plugin/wp-super-cache": "~1.4"
   },
   "extra": {
