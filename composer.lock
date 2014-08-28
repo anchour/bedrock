@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f58078a48227d02e2bc071c0ab4b3cc7",
+    "hash": "d5d66a7dddf3ec23484d55af3a214eda",
     "packages": [
         {
             "name": "composer/installers",
@@ -287,7 +287,7 @@
         },
         {
             "name": "wpackagist-plugin/bruteprotect",
-            "version": "2.0.8.1",
+            "version": "2.2.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bruteprotect/",
@@ -378,6 +378,29 @@
             "homepage": "http://wordpress.org/plugins/iwp-client/"
         },
         {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/jetpack.3.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/jetpack": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/jetpack/"
+        },
+        {
             "name": "wpackagist-plugin/simple-301-redirects",
             "version": "1.06",
             "source": {
@@ -425,15 +448,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.5"
+                "reference": "tags/1.5.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -470,13 +493,21 @@
             "homepage": "http://wordpress.org/plugins/wp-super-cache/"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": [
+
+    ],
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
