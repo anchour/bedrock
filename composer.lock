@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2809388bf708e15a950e7e651d88f6d8",
+    "hash": "4058c8e6b054f021210bbeb598dd8ddf",
     "packages": [
         {
             "name": "composer/installers",
@@ -356,15 +356,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.3.2",
+            "version": "1.3.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "tags/1.3.2"
+                "reference": "tags/1.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.6.zip",
                 "reference": null,
                 "shasum": null
             },
