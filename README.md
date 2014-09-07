@@ -1,18 +1,20 @@
 # [Bedrock](http://roots.io/wordpress-stack/)
 
+Version: 1.3.10
+
 Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
 
 This is a fork of [Roots](https://github.com/roots/bedrock), modified to use with deploying sites via [Laravel Forge](https://forge.laravel.com).
 
 ## What's This For?
 
-Recently, [Laravel Forge](https://forge.laravel.com) was released. Forge allows you to provision servers that are tuned for [Laravel](http://laravel.com), but allow you to deploy really anything you want. It comes with:
+This package is intended for use with [Laravel Forge](https://forge.laravel.com). Forge allows you to provision servers that are primarily used with [Laravel](http://laravel.com), but allow you to deploy really anything you want. It comes with:
 
 * Nginx
 * PHP 5.5
 * MySQL
 
-and more, pre-installed. While WordPress was traditionally used in an Apache environment, it works great with Nginx as well. Deploying WordPress using a Laravel service might sound weird, but it works for us.
+and more, pre-installed.
 
 ## Quick Start
 
@@ -56,7 +58,7 @@ To skip the scripts completely, `create-project` can be run with `--no-scripts` 
 2. Run `composer install`
 3. Add theme(s)
 4. Access WP Admin at `http://example.com/wp/wp-admin`
-5. Set your Nginx or Apache vhost to `/path/to/site/web/` (`/path/to/site/current/web/` if using Capistrano)
+5. Set your Nginx or Apache vhost to `/path/to/site/public/`. 
 
 ## Documentation
 
@@ -87,7 +89,6 @@ The organization of Bedrock is similar to putting WordPress in its own subdirect
 * In order not to expose sensetive files in the webroot, Bedrock moves what's required into a `web/` directory including the vendor'd `wp/` source, and the `wp-content` source.
 * `wp-content` (or maybe just `content`) has been named `app` to better reflect its contents. It contains application code and not just "static content". It also matches up with other frameworks such as Symfony and Rails.
 * `wp-config.php` remains in the `web/` because it's required by WP, but it only acts as a loader. The actual configuration files have been moved to `config/` for better separation.
-* Capistrano configs are also located in `config/` to make it consistent.
 * `vendor/` is where the Composer managed dependencies are installed to.
 * `wp/` is where the WordPress core lives. It's also managed by Composer but can't be put under `vendor` due to WP limitations.
 
