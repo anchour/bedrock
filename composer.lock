@@ -287,7 +287,7 @@
         },
         {
             "name": "wpackagist-plugin/bruteprotect",
-            "version": "2.2.2",
+            "version": "2.2.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bruteprotect/",
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/cms-tree-page-view",
-            "version": "1.2.28",
+            "version": "1.2.29",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
-                "reference": "tags/1.2.28"
+                "reference": "tags/1.2.29"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.28.zip",
+                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.29.zip",
                 "reference": null,
                 "shasum": null
             },
