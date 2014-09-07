@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5d66a7dddf3ec23484d55af3a214eda",
+    "hash": "2809388bf708e15a950e7e651d88f6d8",
     "packages": [
         {
             "name": "composer/installers",
@@ -181,10 +181,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "3.9.2",
+            "version": "4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-3.9.2.zip",
+                "url": "https://wordpress.org/wordpress-4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -287,7 +287,7 @@
         },
         {
             "name": "wpackagist-plugin/bruteprotect",
-            "version": "2.2.2",
+            "version": "2.2.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bruteprotect/",
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/cms-tree-page-view",
-            "version": "1.2.28",
+            "version": "1.2.29",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
-                "reference": "tags/1.2.28"
+                "reference": "tags/1.2.29"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.28.zip",
+                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.29.zip",
                 "reference": null,
                 "shasum": null
             },
