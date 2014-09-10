@@ -64,9 +64,9 @@
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
-    "wpackagist-plugin/better-wp-security" : "4.3.x",
+    "wpackagist-plugin/better-wp-security" : "4.x",
     "wpackagist-plugin/iwp-client": "1.3.x",
-    "wpackagist-plugin/wordpress-seo": "1.5.x",
+    "wpackagist-plugin/wordpress-seo": "1.6.x",
     "wpackagist-plugin/advanced-custom-fields": "4.3.8",
     "wpackagist-plugin/wordpress-importer": "0.6.1",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "0.6.x",
@@ -76,7 +76,8 @@
     "wpackagist-plugin/disqus-comment-system": "2.x",
     "wpackagist-plugin/bruteprotect": "~2.1",
     "wpackagist-plugin/jetpack": "~3.1.1",
-    "wpackagist-plugin/wp-super-cache": "~1.4"
+    "wpackagist-plugin/wp-super-cache": "~1.4",
+    "wpackagist-plugin/rename-wp-login": "2.x"
   },
   "extra": {
     "installer-paths": {
