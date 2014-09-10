@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2809388bf708e15a950e7e651d88f6d8",
+    "hash": "b4ba4b8cdf17b34c501f4cc2ba8c8ef2",
     "packages": [
         {
             "name": "composer/installers",
@@ -264,15 +264,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.2.15",
+            "version": "4.4.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.2.15"
+                "reference": "tags/4.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.2.15.zip",
+                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.4.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -287,7 +287,7 @@
         },
         {
             "name": "wpackagist-plugin/bruteprotect",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bruteprotect/",
@@ -310,15 +310,15 @@
         },
         {
             "name": "wpackagist-plugin/cms-tree-page-view",
-            "version": "1.2.29",
+            "version": "1.2.30",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
-                "reference": "tags/1.2.29"
+                "reference": "tags/1.2.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.29.zip",
+                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.30.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -356,15 +356,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.3.2",
+            "version": "1.3.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "tags/1.3.2"
+                "reference": "tags/1.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -399,6 +399,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/jetpack/"
+        },
+        {
+            "name": "wpackagist-plugin/rename-wp-login",
+            "version": "2.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/rename-wp-login/",
+                "reference": "tags/2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/rename-wp-login.2.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/rename-wp-login": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/rename-wp-login/"
         },
         {
             "name": "wpackagist-plugin/simple-301-redirects",
@@ -448,15 +471,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.5.6",
+            "version": "1.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.5.6"
+                "reference": "tags/1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.6.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.zip",
                 "reference": null,
                 "shasum": null
             },
