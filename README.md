@@ -31,7 +31,6 @@ Run `composer create-project anchour/bedrock <path>` (see [Installation/Usage](#
 
 * Git
 * PHP >= 5.3.2 (for Composer)
-* Ruby >= 1.9 (for Capistrano)
 
 ## Installation/Usage
 
