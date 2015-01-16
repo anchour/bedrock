@@ -72,7 +72,7 @@ define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
  */
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
-$table_prefix = $_ENV['TABLE_PREFIX'] ? $_ENV['TABLE_PREFIX'] : 'wp_';
+$table_prefix = isset($_ENV['TABLE_PREFIX']) ? $_ENV['TABLE_PREFIX'] : 'wp_';
 
 /**
  * WordPress Localized Language
