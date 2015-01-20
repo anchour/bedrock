@@ -219,15 +219,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "0.8",
+            "version": "0.8.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/0.8"
+                "reference": "tags/0.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.8.zip",
+                "url": "http://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.8.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -239,15 +239,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-web-services",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/amazon-web-services/",
-                "reference": "tags/0.2.1"
+                "reference": "tags/0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/amazon-web-services.0.2.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/amazon-web-services.0.2.2.zip",
                 "reference": null,
                 "shasum": null
             },
