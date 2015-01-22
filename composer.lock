@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.5.10",
+            "version": "4.6.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.5.10"
+                "reference": "tags/4.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.5.10.zip",
+                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.2.zip",
                 "reference": null,
                 "shasum": null
             },
