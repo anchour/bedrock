@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a750cb82f9a73857a18214e17c58c8b",
+    "hash": "0c59dc450804661132bc12071bbea38a",
     "packages": [
         {
             "name": "composer/installers",
@@ -199,7 +199,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.3.9",
+            "version": "4.4.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -219,15 +219,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/0.8.1"
+                "reference": "tags/0.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.8.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.8.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.6.2",
+            "version": "4.6.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.6.2"
+                "reference": "tags/4.6.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -342,15 +342,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.3.8",
+            "version": "1.3.10",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "tags/1.3.8"
+                "reference": "tags/1.3.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.8.zip",
+                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.10.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -379,26 +379,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jetpack/"
-        },
-        {
-            "name": "wpackagist-plugin/rename-wp-login",
-            "version": "2.5.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/rename-wp-login/",
-                "reference": "tags/2.5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/rename-wp-login.2.5.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/rename-wp-login/"
         },
         {
             "name": "wpackagist-plugin/simple-301-redirects",
