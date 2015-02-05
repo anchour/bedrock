@@ -1,6 +1,6 @@
 # [Bedrock](http://roots.io/wordpress-stack/)
 
-Version: 1.3.16
+Version: 1.3.17
 
 Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
 
