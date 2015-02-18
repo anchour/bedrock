@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.6.4",
+            "version": "4.6.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.6.4"
+                "reference": "tags/4.6.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -319,26 +319,23 @@
         },
         {
             "name": "wpackagist-plugin/cms-tree-page-view",
-            "version": "1.2.30",
+            "version": "1.2.31",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
-                "reference": "tags/1.2.30"
+                "reference": "tags/1.2.31"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.30.zip",
+                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.31.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/cms-tree-page-view": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/cms-tree-page-view/"
+            "homepage": "https://wordpress.org/plugins/cms-tree-page-view/"
         },
         {
             "name": "wpackagist-plugin/iwp-client",
@@ -362,15 +359,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.3",
+            "version": "3.3.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.3"
+                "reference": "tags/3.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -428,15 +425,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.1",
+            "version": "1.7.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.zip",
                 "reference": null,
                 "shasum": null
             },
