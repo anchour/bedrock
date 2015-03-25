@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bbcaf425787b9861b532822a77a47dc7",
+    "hash": "8b5320dff29c714ef15a60ad59ecd0d8",
     "packages": [
         {
             "name": "composer/installers",
@@ -185,10 +185,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.1",
+            "version": "4.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.1.zip",
+                "url": "https://wordpress.org/wordpress-4.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -199,7 +199,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.0",
+            "version": "4.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -207,7 +207,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -216,46 +216,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
-        },
-        {
-            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "0.8.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/0.8.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.8.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
-        },
-        {
-            "name": "wpackagist-plugin/amazon-web-services",
-            "version": "0.2.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/amazon-web-services/",
-                "reference": "tags/0.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/amazon-web-services.0.2.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/amazon-web-services/"
         },
         {
             "name": "wpackagist-plugin/backwpup",
@@ -279,15 +239,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.6.6",
+            "version": "4.6.12",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.6.6"
+                "reference": "tags/4.6.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.6.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.4.6.12.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -296,26 +256,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/better-wp-security/"
-        },
-        {
-            "name": "wpackagist-plugin/bruteprotect",
-            "version": "2.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/bruteprotect/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/bruteprotect.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/bruteprotect/"
         },
         {
             "name": "wpackagist-plugin/cms-tree-page-view",
@@ -359,15 +299,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.3.1",
+            "version": "3.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/jetpack.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -401,39 +341,36 @@
             "homepage": "http://wordpress.org/plugins/simple-301-redirects/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.6.1",
+            "name": "wpackagist-plugin/wordfence",
+            "version": "5.3.8",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.6.1"
+                "url": "http://plugins.svn.wordpress.org/wordfence/",
+                "reference": "tags/5.3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.5.3.8.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wordpress-importer": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wordpress-importer/"
+            "homepage": "https://wordpress.org/plugins/wordfence/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.3"
+                "reference": "tags/1.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.1.7.4.zip",
                 "reference": null,
                 "shasum": null
             },
