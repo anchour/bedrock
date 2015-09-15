@@ -43,7 +43,8 @@ class Installer {
         static::$root = dirname(dirname(__DIR__));
         static::$envFilePath = static::$root . '/.env';
 
-        $io = $event->getIO();
+        $io             = $event->getIO();
+        $generate_salts = false;
 
         // Only add new/regenerate salts if we are doing a fresh install and specify "yes" to the question.
         // This way the salts aren't cleared whenever a `composer install` is done on deploy.
