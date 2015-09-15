@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b5320dff29c714ef15a60ad59ecd0d8",
+    "hash": "49abf8a684141c02d32c3b9477d8f544",
     "packages": [
         {
             "name": "composer/installers",
@@ -185,10 +185,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.1.1",
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.1.1.zip",
+                "url": "https://wordpress.org/wordpress-4.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -199,7 +199,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.1",
+            "version": "4.4.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -238,36 +238,16 @@
             "homepage": "https://wordpress.org/plugins/backwpup/"
         },
         {
-            "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.6.12",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.6.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.4.6.12.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/better-wp-security/"
-        },
-        {
             "name": "wpackagist-plugin/cms-tree-page-view",
-            "version": "1.2.31",
+            "version": "1.2.32",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
-                "reference": "tags/1.2.31"
+                "reference": "tags/1.2.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.31.zip",
+                "url": "https://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.32.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -279,15 +259,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.3.10",
+            "version": "1.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "tags/1.3.10"
+                "reference": "tags/1.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iwp-client.1.3.10.zip",
+                "url": "https://downloads.wordpress.org/plugin/iwp-client.1.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -299,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.4.1",
+            "version": "3.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -342,15 +322,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "5.3.8",
+            "version": "6.0.17",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/5.3.8"
+                "reference": "tags/6.0.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.5.3.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.17.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -362,15 +342,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.4",
+            "version": "2.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.4"
+                "reference": "tags/2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.1.7.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -382,26 +362,23 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.2",
+            "version": "1.4.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.2"
+                "reference": "tags/1.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-super-cache.1.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/wp-super-cache": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wp-super-cache/"
+            "homepage": "https://wordpress.org/plugins/wp-super-cache/"
         },
         {
             "name": "wpackagist-plugin/wpmandrill",
