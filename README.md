@@ -49,7 +49,7 @@ To skip the scripts completely, `create-project` can be run with `--no-scripts` 
 1. Run `composer create-project anchour/bedrock <path>` (`path` being the folder to install to)
 2. Add theme(s)
 3. Access WP Admin at `http://example.com/wp/wp-admin`
-4. Set your Nginx or Apache vhost to `/path/to/site/web/`.
+4. Set your Nginx or Apache vhost to `/path/to/site/public/`.
 
 ### Manually
 
@@ -85,16 +85,16 @@ To skip the scripts completely, `create-project` can be run with `--no-scripts` 
 
 The organization of Bedrock is similar to putting WordPress in its own subdirectory but with some improvements.
 
-* In order not to expose sensetive files in the webroot, Bedrock moves what's required into a `web/` directory including the vendor'd `wp/` source, and the `wp-content` source.
-* `wp-content` (or maybe just `content`) has been named `app` to better reflect its contents. It contains application code and not just "static content". It also matches up with other frameworks such as Symfony and Rails.
-* `wp-config.php` remains in the `web/` because it's required by WP, but it only acts as a loader. The actual configuration files have been moved to `config/` for better separation.
+* In order not to expose sensitive files in the webroot, Bedrock moves what's required into a `public/` directory including the vendor'd `wp/` source, and the `wp-content` source.
+* `wp-content` (or maybe just `content`) has been named `app` to better reflect its contents. It contains application code and not just "static content".
+* `wp-config.php` remains in the `public/` because it's required by WP, but it only acts as a loader. The actual configuration files have been moved to `config/` for better separation.
 * `vendor/` is where the Composer managed dependencies are installed to.
 * `wp/` is where the WordPress core lives. It's also managed by Composer but can't be put under `vendor` due to WP limitations.
 
 
 ### Configuration Files
 
-The root `web/wp-config.php` is required by WordPress and is only used to load the other main configs. Nothing else should be added to it.
+The root `public/wp-config.php` is required by WordPress and is only used to load the other main configs. Nothing else should be added to it.
 
 `config/application.php` is the main config file that contains what `wp-config.php` usually would. Base options should be set in there.
 
@@ -157,7 +157,7 @@ Whenever you add a new plugin or update the WP version, run `composer update` to
 
 `plugins`, and `mu-plugins` are Git ignored by default since Composer manages them. If you want to add something to those folders that *isn't* managed by Composer, you need to update `.gitignore` to whitelist them:
 
-`!web/app/plugins/plugin-name`
+`!public/app/plugins/plugin-name`
 
 Note: Some plugins may create files or folders outside of their given scope, or even make modifications to `wp-config.php` and other files in the `app` directory. These files should be added to your `.gitignore` file as they are managed by the plugins themselves, which are managed via Composer. Any modifications to `wp-config.php` that are needed should be moved into `config/application.php`.
 
@@ -192,7 +192,7 @@ Bedrock disables the internal WP Cron via `define('DISABLE_WP_CRON', true);`. If
 
 Bedrock works with [WP-CLI](http://wp-cli.org/) just like any other WordPress project would. Previously we required WP-CLI in our `composer.json` file as a dependency. This has been removed since WP-CLI now recommends installing it globally with a `phar` file. It also caused conflicts if you tried using a global install.
 
-The `wp` command will automatically pick up Bedrock's subdirectory install as long as you run commands from within the project's directory (or deeper). Bedrock includes a `wp-cli.yml` file that sets the `path` option to `web/wp`. Use this config file for any further [configuration](http://wp-cli.org/config/).
+The `wp` command will automatically pick up Bedrock's subdirectory install as long as you run commands from within the project's directory (or deeper). Bedrock includes a `wp-cli.yml` file that sets the `path` option to `public/wp`. Use this config file for any further [configuration](http://wp-cli.org/config/).
 
 ## Contributing
 
