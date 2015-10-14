@@ -219,15 +219,15 @@
         },
         {
             "name": "wpackagist-plugin/backwpup",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/backwpup/",
-                "reference": "tags/3.2.0"
+                "reference": "tags/3.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/backwpup.3.2.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/backwpup.3.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -322,15 +322,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "6.0.17",
+            "version": "6.0.20",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.0.17"
+                "reference": "tags/6.0.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.17.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.6.0.20.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -362,15 +362,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.5"
+                "reference": "tags/1.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.6.zip",
                 "reference": null,
                 "shasum": null
             },
