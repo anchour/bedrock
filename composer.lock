@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "570c09899cb25667ee02932d7bf151d2",
-    "content-hash": "24e3fb83d80ba66668a5e188ac836641",
+    "hash": "973d0c193e93fe9784fe741761adad4d",
+    "content-hash": "ac0b975f70e70ec4f5a218dd200d40c6",
     "packages": [
         {
             "name": "composer/installers",
@@ -48,7 +48,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -308,18 +308,15 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/simple-301-redirects.1.06.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-301-redirects.1.06.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/simple-301-redirects": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/simple-301-redirects/"
+            "homepage": "https://wordpress.org/plugins/simple-301-redirects/"
         },
         {
             "name": "wpackagist-plugin/wordfence",
@@ -391,7 +388,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wpmandrill.1.33.zip",
+                "url": "https://downloads.wordpress.org/plugin/wpmandrill.1.33.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -409,7 +406,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.2"
+        "php": ">=5.4"
     },
     "platform-dev": []
 }
