@@ -1,6 +1,6 @@
 # [Bedrock](http://roots.io/wordpress-stack/)
 
-Version: 1.4.0
+Version: 1.4.2
 
 Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
 
@@ -57,7 +57,7 @@ To skip the scripts completely, `create-project` can be run with `--no-scripts` 
 2. Run `composer install`
 3. Add theme(s)
 4. Access WP Admin at `http://example.com/wp/wp-admin`
-5. Set your Nginx or Apache vhost to `/path/to/site/public/`. 
+5. Set your Nginx or Apache vhost to `/path/to/site/public/`.
 
 ## Documentation
 
