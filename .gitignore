@@ -21,6 +21,11 @@ public/app/uploads/*
 !public/app/uploads/.gitkeep
 !public/app/mu-plugins/register-theme-directory.php
 
+# Premium plugins
+!public/app/plugins/gravityforms
+!public/app/plugins/gravityforms*
+!public/app/plugins/acf-*
+
 # Vendor (e.g. Composer)
 vendor/*
 !vendor/.gitkeep
