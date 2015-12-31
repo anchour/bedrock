@@ -26,6 +26,8 @@ class Installer {
         'WP_SITEURL',
     ];
 
+    private static $io;
+
     /**
      * Holds the root path.
      * @var string
@@ -38,18 +40,21 @@ class Installer {
      */
     private static $envFilePath;
 
+    /**
+     * @param Event $event
+     */
     public static function addSalts(Event $event)
     {
-        static::$root = dirname(dirname(__DIR__));
+        static::$root        = dirname(dirname(__DIR__));
         static::$envFilePath = static::$root . '/.env';
 
-        $io             = $event->getIO();
+        static::$io     = $event->getIO();
         $generate_salts = false;
 
         // Only add new/regenerate salts if we are doing a fresh install and specify "yes" to the question.
         // This way the salts aren't cleared whenever a `composer install` is done on deploy.
-        if ($io->isInteractive()) {
-            $generate_salts = $io->askConfirmation('<info>Generate salts and append to .env file?</info> [<comment>Y,n</comment>]? ', true);
+        if (static::$io->isInteractive()) {
+            $generate_salts = static::$io->askConfirmation('<info>Generate salts and append to .env file?</info> [<comment>Y,n</comment>]? ', true);
         }
 
         // No need to continue - exit.
@@ -60,14 +65,34 @@ class Installer {
         // Open the file for writing.
         $handle = fopen(static::$envFilePath, 'a');
 
-        $keys = array_map(function($key) {
-            return sprintf("%s='%s'", $key, Installer::generateSalt());
-        }, self::$saltKeys);
+        $keys = [];
+
+        // Get the salt keys.
+        foreach (static::$saltKeys as $key) {
+            $keys[] = static::getEnvVar($key, Installer::generateSalt());
+        }
+
+        // Append additional keys to the .env file/keys array.
+        foreach (static::setEnvironmentVariables() as $key => $val) {
+            $keys[] = static::getEnvVar($key, $val);
+        }
 
         if ($handle) {
             fwrite($handle, implode($keys, "\n"));
             fclose($handle);
         }
+    }
+
+    /**
+     * Returns the key/value pair that will be appended to the .env file.
+     *
+     * @param $key
+     * @param $value
+     * @return string
+     */
+    private static function getEnvVar($key, $value)
+    {
+        return sprintf("%s='%s'", $key, $value);
     }
 
     /**
@@ -87,8 +112,9 @@ class Installer {
      *
      * @link <https://github.com/WordPress/WordPress/blob/cd8cedc40d768e9e1d5a5f5a08f1bd677c804cb9/wp-includes/pluggable.php#L1575>
      */
-    public static function generateSalt($length = 64) {
-        $chars  = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    public static function generateSalt($length = 64)
+    {
+        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         $chars .= '!@#$%^&*()';
         $chars .= '-_ []{}<>~`+=,.;:/?|';
 
@@ -98,5 +124,44 @@ class Installer {
         }
 
         return $salt;
+    }
+
+    private static function setEnvironmentVariables()
+    {
+        $vars = [];
+
+        // Set up some sensible defaults for env vars.
+        $parentDirBasename = basename(dirname(static::$envFilePath));
+        $wpEnv             = 'development';
+        $wpHomeUrl         = 'http://' . $parentDirBasename;
+        $wpSiteUrl         = $wpHomeUrl . '/wp';
+        $dbHost            = 'localhost';
+        $dbName            = self::formatDatabaseName($parentDirBasename);
+        $dbUser            = 'homestead';
+        $dbPassword        = 'secret';
+
+        $vars['DB_HOST']     = static::$io->ask("Database host? [<comment>$dbHost</comment>]", $dbHost);
+        $vars['DB_NAME']     = static::$io->ask("Database name? [<comment>$dbName</comment>]", $dbName);
+        $vars['DB_USER']     = static::$io->ask("Database user? [<comment>$dbUser</comment>]", $dbUser);
+        $vars['DB_PASSWORD'] = static::$io->ask("Database password? [<comment>$dbPassword</comment>]", $dbPassword);
+
+        $vars['WP_ENV']     = static::$io->ask("WP Environment? [<comment>$wpEnv</comment>]", $wpEnv);
+        $vars['WP_HOME']    = static::$io->ask("WP Home URL? [<comment>$wpHomeUrl</comment>]", $wpHomeUrl);
+        $vars['WP_SITEURL'] = static::$io->ask("WP Site (admin) URL? [<comment>$wpSiteUrl</comment>]", $wpSiteUrl);
+
+        // Make sure we have a proper format for the database name.
+        $vars['DB_NAME'] = static::formatDatabaseName($vars['DB_NAME']);
+
+        return $vars;
+    }
+
+    /**
+     * @param $parentDirBasename
+     * @return mixed
+     */
+    private static function formatDatabaseName($parentDirBasename)
+    {
+        $dbName = preg_replace('/(?:[^\w]+)/', '_', basename($parentDirBasename));
+        return $dbName;
     }
 }
