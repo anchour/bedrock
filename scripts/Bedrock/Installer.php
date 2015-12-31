@@ -126,6 +126,13 @@ class Installer {
         return $salt;
     }
 
+    /**
+     * Prompt for additional default environment variables on install with interaction.
+     * Database variables are DB_HOST, DB_NAME, DB_USER, DB_PASSWORD
+     * WP Environment Variables are WP_ENV, WP_HOME, WP_SITEURL
+     *
+     * @return array
+     */
     private static function setEnvironmentVariables()
     {
         $vars = [];
