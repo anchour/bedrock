@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "973d0c193e93fe9784fe741761adad4d",
-    "content-hash": "ac0b975f70e70ec4f5a218dd200d40c6",
+    "hash": "9569533e04762184ba298b58f6de0da0",
+    "content-hash": "beb9b5ca329f15912d5ac765babf7044",
     "packages": [
         {
             "name": "composer/installers",
@@ -186,10 +186,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.4",
+            "version": "4.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.4.zip",
+                "url": "https://wordpress.org/wordpress-4.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -200,15 +200,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "trunk"
+                "reference": "tags/4.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -260,15 +260,15 @@
         },
         {
             "name": "wpackagist-plugin/iwp-client",
-            "version": "1.4.3",
+            "version": "1.5.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/iwp-client/",
-                "reference": "trunk"
+                "reference": "tags/1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/iwp-client.zip",
+                "url": "https://downloads.wordpress.org/plugin/iwp-client.1.5.0.zip",
                 "reference": null,
                 "shasum": null
             },
