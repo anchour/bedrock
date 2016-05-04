@@ -2,14 +2,32 @@
 public/wp
 public/.htaccess
 
+# Ignore wp-config.php because some plugins modify this file programmatically,
+# which is a pain to deal with in prod.
+public/wp-config.php
+
+
+
+
+
+
 # WP-CLI
 db-sync
 sql-dump-*.sql
 *.sql
+*.sh
+
+
+
+
+
 
 # Dotenv
 .env
 .env.*
+
+
+
 
 # Application
 public/app/plugins/*
@@ -21,21 +39,57 @@ public/app/uploads/*
 !public/app/uploads/.gitkeep
 !public/app/mu-plugins/register-theme-directory.php
 
+
+
+
+
 # Premium plugins
+
+# Gravity Forms and related addons
 !public/app/plugins/gravityforms
 !public/app/plugins/gravityforms*
+
+# Premium ACF 4 addons
 !public/app/plugins/acf-*
+
+# ACF Pro (v5)
+!public/app/plugins/advanced-custom-fields-pro
+!public/app/plugins/advanced-custom-fields-pro*
+
+# Restrict Content Pro and its addons.
+!public/app/plugins/restrict-content-pro*
+!public/app/plugins/rcp-*
+
+
+
+
 
 # Vendor (e.g. Composer)
 vendor/*
 !vendor/.gitkeep
 
+
+
+
+
+
+
 # Node Package Manager
 node_modules
+
+
+
+
+
 
 # Vagrant
 bin
 .vagrant
+
+
+
+
+
 
 # Other
 .DS_Store
